@@ -217,11 +217,23 @@
 
   /* ── GALLERY ── */
   #galeri { background: #fff; }
+  .gallery-category {
+    margin-bottom: 56px;
+  }
+  .category-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: var(--green);
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 2px dashed var(--rose-light);
+    display: inline-block;
+  }
   .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 18px;
-    margin-top: 40px;
+    gap: 24px;
+    margin-top: 20px;
   }
   .gallery-card {
     position: relative;
@@ -229,6 +241,12 @@
     overflow: hidden;
     aspect-ratio: 3/4;
     cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .gallery-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(0,0,0,0.12);
   }
   .gallery-card img {
     width: 100%; height: 100%;
@@ -254,6 +272,7 @@
     transform: translateY(6px);
     transition: opacity 0.3s, transform 0.3s;
     letter-spacing: 0.5px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
   }
   .gallery-card:hover .card-label { opacity: 1; transform: translateY(0); }
 
@@ -439,10 +458,10 @@
   </div>
 
   <div class="hero-mosaic">
-    <div class="mosaic-img tall"><img src="https://lh3.googleusercontent.com/p/AF1QipNQ2t0kyLX6CWkClcndM6f2ez465HE9CDRXbnzz=s1360-w1360-h1020-rw" alt="Güller buketi"></div>
-    <div class="mosaic-img"><img src="https://lh3.googleusercontent.com/p/AF1QipNd1sqGzNxfutJ99DPk2-2MO2NY-DHgxA-URE19=s1360-w1360-h1020-rw" alt="Kırmızı güller kutu"></div>
-    <div class="mosaic-img"><img src="https://lh3.googleusercontent.com/p/AF1QipPY-LIRibCU2j0_syB3kMOp3NiRUm_BuoXbQjln=s1360-w1360-h1020-rw" alt="Büyük buket"></div>
-    <div class="mosaic-img"><img src="https://lh3.googleusercontent.com/p/AF1QipOpCtoJXvF1k-WX74cBXRhZSH9mkV6AsIyG2iiX=s1360-w1360-h1020-rw" alt="Çiçek aranjman"></div>
+    <div class="mosaic-img tall"><img src="https://www.adanakumsalcicek.online/images/buket1.jpeg" alt="Güller buketi"></div>
+    <div class="mosaic-img"><img src="https://www.adanakumsalcicek.online/images/kutucikolata1.jpeg" alt="Kutu aranjman"></div>
+    <div class="mosaic-img"><img src="https://www.adanakumsalcicek.online/images/buket4.jpeg" alt="Büyük buket"></div>
+    <div class="mosaic-img"><img src="https://www.adanakumsalcicek.online/images/celeng1.jpeg" alt="Çiçek aranjman"></div>
   </div>
 </section>
 
@@ -453,50 +472,80 @@
   <div class="divider"></div>
   <p class="section-sub">Özel günleriniz için el yapımı, taze çiçeklerle hazırlanan eşsiz tasarımlar.</p>
 
-  <div class="gallery-grid">
-    <div class="gallery-card">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipNQ2t0kyLX6CWkClcndM6f2ez465HE9CDRXbnzz=s1360-w1360-h1020-rw" alt="Kırmızı Beyaz Buket">
-      <div class="card-label">Kırmızı & Beyaz Buket</div>
+  <!-- Buketler Kategorisi -->
+  <div class="gallery-category">
+    <h3 class="category-title">💐 Buketler</h3>
+    <div class="gallery-grid">
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/buket1.jpeg" alt="Buket"><div class="card-label">Özel Buket</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/buket2.jpeg" alt="Buket"><div class="card-label">Romantik Buket</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/buket3.jpeg" alt="Buket"><div class="card-label">Gül Buketi</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/buket4.jpeg" alt="Buket"><div class="card-label">Kır Çiçekleri</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/buket5.jpeg" alt="Buket"><div class="card-label">Zarif Buket</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/buket6.jpeg" alt="Buket"><div class="card-label">Renkli Buket</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/buket7.jpeg" alt="Buket"><div class="card-label">Pastel Buket</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/buket8.jpeg" alt="Buket"><div class="card-label">Şık Buket</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/buket9.jpeg" alt="Buket"><div class="card-label">Dev Buket</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/buket10.jpeg" alt="Buket"><div class="card-label">Lüks Buket</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/buket11.jpeg" alt="Buket"><div class="card-label">Kırmızı Güller</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/buket12.jpeg" alt="Buket"><div class="card-label">Beyaz Buket</div></div>
     </div>
-    <div class="gallery-card">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipNd1sqGzNxfutJ99DPk2-2MO2NY-DHgxA-URE19=s1360-w1360-h1020-rw" alt="Kutu Aranjman">
-      <div class="card-label">Kutu Aranjman</div>
+  </div>
+
+  <!-- Çelengler Kategorisi -->
+  <div class="gallery-category">
+    <h3 class="category-title">🌿 Çelengler</h3>
+    <div class="gallery-grid">
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/celeng1.jpeg" alt="Çelenk"><div class="card-label">Açılış Çelengi</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/celeng2.jpeg" alt="Çelenk"><div class="card-label">Anma Çelengi</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/celeng3.jpeg" alt="Çelenk"><div class="card-label">Doğal Çelenk</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/celeng4.jpeg" alt="Çelenk"><div class="card-label">Taze Çelenk</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/celeng5.jpeg" alt="Çelenk"><div class="card-label">Kırmızı Çelenk</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/celeng6.jpeg" alt="Çelenk"><div class="card-label">Beyaz Çelenk</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/celeng7.jpeg" alt="Çelenk"><div class="card-label">Karışık Çelenk</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/celeng8.jpeg" alt="Çelenk"><div class="card-label">Zarif Çelenk</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/celeng9.jpeg" alt="Çelenk"><div class="card-label">Büyük Çelenk</div></div>
     </div>
-    <div class="gallery-card">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipPY-LIRibCU2j0_syB3kMOp3NiRUm_BuoXbQjln=s1360-w1360-h1020-rw" alt="Dev Buket">
-      <div class="card-label">Dev Gül Buketi</div>
+  </div>
+
+  <!-- Kutu Çikolata Kategorisi -->
+  <div class="gallery-category">
+    <h3 class="category-title">🍫 Kutu & Çikolata Aranjmanları</h3>
+    <div class="gallery-grid">
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/kutucikolata1.jpeg" alt="Kutu Aranjman"><div class="card-label">Kutu Aranjman</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/kutucikolata2.jpeg" alt="Kutu Aranjman"><div class="card-label">Çikolata Buketi</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/kutucikolata3.jpeg" alt="Kutu Aranjman"><div class="card-label">Kinder Aranjman</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/kutucikolata4.jpeg" alt="Kutu Aranjman"><div class="card-label">Özel Kutu</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/kutucikolata5.jpeg" alt="Kutu Aranjman"><div class="card-label">Lüks Kutu</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/kutucikolata6.jpeg" alt="Kutu Aranjman"><div class="card-label">Şık Aranjman</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/kutucikolata7.jpeg" alt="Kutu Aranjman"><div class="card-label">Kalp Kutu</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/kutucikolata8.jpeg" alt="Kutu Aranjman"><div class="card-label">Çiçek & Çikolata</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/kutucikolata10.jpeg" alt="Kutu Aranjman"><div class="card-label">Romantik Kutu</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/kutucikolata11.jpeg" alt="Kutu Aranjman"><div class="card-label">Premium Kutu</div></div>
     </div>
-    <div class="gallery-card">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipNdIy0Dtj6UZkfGZYbpXu635riLm20Ylw6M04Vs=s1360-w1360-h1020-rw" alt="Gelin Arabası">
-      <div class="card-label">Gelin Arabası Süsleme</div>
+  </div>
+
+  <!-- Saksılarımız Kategorisi -->
+  <div class="gallery-category">
+    <h3 class="category-title">🌵 Saksı Bitkilerimiz</h3>
+    <div class="gallery-grid">
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/saks%C4%B11.jpeg" alt="Saksı Bitki"><div class="card-label">Sukulent</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/saks%C4%B12.jpeg" alt="Saksı Bitki"><div class="card-label">Orkide</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/saks%C4%B13.jpeg" alt="Saksı Bitki"><div class="card-label">Kaktüs</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/saks%C4%B14.jpeg" alt="Saksı Bitki"><div class="card-label">Salon Bitkisi</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/saks%C4%B15.jpeg" alt="Saksı Bitki"><div class="card-label">Yeşil Bitki</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/saks%C4%B16.jpeg" alt="Saksı Bitki"><div class="card-label">Çiçekli Saksı</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/saks%C4%B17.jpeg" alt="Saksı Bitki"><div class="card-label">Bonsai</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/saks%C4%B18.jpeg" alt="Saksı Bitki"><div class="card-label">Dekoratif Saksı</div></div>
     </div>
-    <div class="gallery-card">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipPFAD58FIPxnCawGDsUF77-NP7d9Y_KB3XntYXU=s1360-w1360-h1020-rw" alt="Kırmızı Buket">
-      <div class="card-label">Kırmızı Gül Buketi</div>
-    </div>
-    <div class="gallery-card">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipOpCtoJXvF1k-WX74cBXRhZSH9mkV6AsIyG2iiX=s1360-w1360-h1020-rw" alt="Kinder Kalp">
-      <div class="card-label">Çikolatalı Kalp Aranjman</div>
-    </div>
-    <div class="gallery-card">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipMAg479M8rpcPOcwcxuP3y3Bayii07Kh4l4aCkk=s1360-w1360-h1020-rw" alt="Balon Aranjman">
-      <div class="card-label">Balonlu Aranjman</div>
-    </div>
-    <div class="gallery-card">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipPXeWFBsadGykFQqf-8FIzP-lwr9t-NiyqqSpA4=s1360-w1360-h1020-rw" alt="Saksı Bahçe">
-      <div class="card-label">Saksı Bahçe Tasarımı</div>
-    </div>
-    <div class="gallery-card">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipM2Lc1-WvcVXBVcaGxfZiDkx9-GzXgzzob6DwPx=s1360-w1360-h1020-rw" alt="Çikolatalı Buket">
-      <div class="card-label">Çikolatalı Buket</div>
-    </div>
-    <div class="gallery-card">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipPF7DM0M27dT5VQ9sAIaQFh85VXWhVs0L3iDgni=s1360-w1360-h1020-rw" alt="Açılış Çiçeği">
-      <div class="card-label">Açılış Çiçeği</div>
-    </div>
-    <div class="gallery-card">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipN0nrPklERHIIihTno_R9a1BZRCSGbHVXniPBjt=s1360-w1360-h1020-rw" alt="Çikolata Kalp">
-      <div class="card-label">Çikolata & Çiçek Kalp</div>
+  </div>
+
+  <!-- Pano Kategorisi -->
+  <div class="gallery-category">
+    <h3 class="category-title">🖼️ Pano Tasarımları</h3>
+    <div class="gallery-grid">
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/pano1.jpeg" alt="Pano"><div class="card-label">Doğum Günü Panosu</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/pano2.jpeg" alt="Pano"><div class="card-label">Kutlama Panosu</div></div>
+      <div class="gallery-card"><img src="https://www.adanakumsalcicek.online/images/pano3.jpeg" alt="Pano"><div class="card-label">Özel Gün Panosu</div></div>
     </div>
   </div>
 </section>
